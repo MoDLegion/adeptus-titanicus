@@ -14392,7 +14392,9 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
             </profile>
           </profiles>
           <rules>
-            <rule id="4bb8-4da4-82a4-de64" name="Bellator Magno" hidden="false"/>
+            <rule id="4bb8-4da4-82a4-de64" name="Martial Pride" hidden="false">
+              <description>During the Combat phase, the Titan may push the reactor to re-roll any Hit rolls for a single weapon.</description>
+            </rule>
           </rules>
           <categoryLinks>
             <categoryLink id="3c89-33e7-800f-08aa" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
@@ -14407,7 +14409,11 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc24-385f-f7de-cf11" type="min"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="edf3-992e-2d07-e251" name="Bellicosa Volcano Cannon [WLD]" hidden="false" collective="false" import="true" targetId="fee8-4996-06cd-64bc" type="selectionEntry"/>
+                    <entryLink id="edf3-992e-2d07-e251" name="Bellicosa Volcano Cannon [WLD]" hidden="false" collective="false" import="true" targetId="fee8-4996-06cd-64bc" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="fad0-e4c3-42dd-ae9c" name="Right Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a1e-fc04-48c8-be33">
@@ -14416,7 +14422,11 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdb9-55a6-e403-da3a" type="min"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="8a1e-fc04-48c8-be33" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
+                    <entryLink id="8a1e-fc04-48c8-be33" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" targetId="5960-ee8c-3107-46c4" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="a731-e220-2d8a-41bf" value="0.0"/>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="330f-e2db-1a87-c162" name="Carapace" hidden="false" collective="false" import="true">
