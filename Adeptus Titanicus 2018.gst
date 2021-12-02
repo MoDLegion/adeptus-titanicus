@@ -8842,7 +8842,7 @@ If a player&apos;s battlegroup contains any Squadrons, they can choose this Stra
         <entryLink id="d423-0b55-e2dc-5814" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
         <entryLink id="390c-cf74-a2a8-27c1" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
         <entryLink id="b0c5-f29e-c8fb-9c63" name="Traitor Wargear" hidden="false" collective="false" import="true" targetId="3bce-46aa-99ca-8f60" type="selectionEntryGroup"/>
-        <entryLink id="a562-625e-d1b3-ef8b" name="Mutations" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
+        <entryLink id="a562-625e-d1b3-ef8b" name="Base Mutation" hidden="false" collective="false" import="true" targetId="f085-672c-f8c5-11c1" type="selectionEntryGroup"/>
         <entryLink id="1583-f2be-fe73-2973" name="Corrupt Titan" hidden="false" collective="false" import="true" targetId="a6b6-2e17-4aaa-3ec0" type="selectionEntry"/>
         <entryLink id="e04b-e35b-7bf7-0dcb" name="Additional Mutations" hidden="false" collective="false" import="true" targetId="b29a-98ec-a821-54f9" type="selectionEntryGroup">
           <constraints>
@@ -14370,6 +14370,89 @@ If the check is failed, and the unit is a Titan, increase the Titan’s reactor 
           </rules>
           <costs>
             <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="20.0"/>
+            <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="5eff-f87e-163a-025e" name="Titans of Legend" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="d87a-6445-18fa-6cd2" name="Bellator Magno" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="67dc-9af1-10a2-c107" name="Bellator Magno" hidden="false" typeId="f6b0-d09f-1acc-9f3e" typeName="Engine">
+              <characteristics>
+                <characteristic name="Speed" typeId="0ef3-ea55-7cd1-d007">4&quot;/6&quot;</characteristic>
+                <characteristic name="Command" typeId="e94d-33bd-da82-fd4d">3+</characteristic>
+                <characteristic name="Ballistic Skill" typeId="f14c-a692-0b4a-c510">2+</characteristic>
+                <characteristic name="Weapon Skill" typeId="935c-7d79-d2fe-dcf8">5+</characteristic>
+                <characteristic name="Manuever" typeId="d9fc-a9ed-b5ab-e97c">1/2</characteristic>
+                <characteristic name="Servitor Clades" typeId="a877-9231-f92a-5538">4</characteristic>
+                <characteristic name="Scale" typeId="5359-4d2b-082b-546a">10</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="4bb8-4da4-82a4-de64" name="Bellator Magno" hidden="false"/>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="3c89-33e7-800f-08aa" name="New CategoryLink" hidden="false" targetId="3f71-3a59-3b75-4ecf" primary="false"/>
+            <categoryLink id="b4cd-4070-f615-cab5" name="New CategoryLink" hidden="false" targetId="7103-9316-d4a5-8caa" primary="true"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b058-a480-83a8-96c4" name="Weapons" hidden="false" collective="false" import="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="d84a-b2ca-481c-dba4" name="Left Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="edf3-992e-2d07-e251">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbfb-1d72-0848-7f39" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc24-385f-f7de-cf11" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="edf3-992e-2d07-e251" name="Bellicosa Volcano Cannon [WLD]" hidden="false" collective="false" import="true" targetId="fee8-4996-06cd-64bc" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="fad0-e4c3-42dd-ae9c" name="Right Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a1e-fc04-48c8-be33">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c845-9bbf-2f0c-a232" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdb9-55a6-e403-da3a" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="8a1e-fc04-48c8-be33" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" targetId="5960-ee8c-3107-46c4" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="330f-e2db-1a87-c162" name="Carapace" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c62-ff96-4a8a-fa84" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="479a-6dae-8e54-d85a" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="f11c-56fa-f6f5-3272" name="Apocalypse Missile Launchers" hidden="false" collective="false" import="true" targetId="bd33-0564-6277-6dc1" type="selectionEntry"/>
+                    <entryLink id="ca2b-d251-926c-7132" name="Paired Gatling Blasters" hidden="false" collective="false" import="true" targetId="bfdb-4953-f838-7d21" type="selectionEntry"/>
+                    <entryLink id="088e-8451-eb26-0dba" name="Paired Laser Blaster" hidden="false" collective="false" import="true" targetId="5fc7-120d-623b-8b5a" type="selectionEntry"/>
+                    <entryLink id="d09c-c1a8-9d55-7973" name="Paired Turbo Laser Destructor" hidden="false" collective="false" import="true" targetId="bfee-3947-a004-3a4e" type="selectionEntry"/>
+                    <entryLink id="045b-e07a-b0d7-c89c" name="Vulcan Megabolter Array" hidden="false" collective="false" import="true" targetId="f2ae-e883-28c4-dbcc" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="7446-8c6d-3f5f-2cb6" name="Ardex Defensor Cannon" hidden="false" collective="false" import="true" targetId="ebc6-2029-ceb3-f43b" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="8402-c436-dd0f-9806" name="Loyalist Wargear" hidden="false" collective="false" import="true" targetId="c354-c2bb-8d84-0770" type="selectionEntryGroup"/>
+            <entryLink id="76eb-81b8-62ec-7f52" name="Universal Wargear" hidden="false" collective="false" import="true" targetId="f360-b4bd-e6cd-d077" type="selectionEntryGroup"/>
+            <entryLink id="9865-9e22-cc52-6d37" name="Legio Gryphonicus (War Griffons)" hidden="false" collective="false" import="true" targetId="0986-9b84-b734-e9c8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45e4-2764-a618-d9d6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f83e-de27-6ca1-d499" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="04fd-5221-3f03-34b0" name="LegioGryphonicus" hidden="false" targetId="0796-178c-50ce-2d1f" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Points" typeId="a731-e220-2d8a-41bf" value="495.0"/>
             <cost name=" Stratagem Points" typeId="efbf-52f7-fd08-f329" value="0.0"/>
           </costs>
         </selectionEntry>
